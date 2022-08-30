@@ -1,6 +1,7 @@
 <body [ngStyle]="{'background-color': colorFondo}" >
+  <app-navbar></app-navbar>
   <br>
-  <div class="row container">
+  <div class="container-fluid">
     <div class="col-12" [ngStyle]="{'color': colorLetras}">
       <h1 >Selector de Color Hexadecimal</h1>
       <div class="col-md-6 ">
@@ -11,13 +12,13 @@
     </div>
   </div>
   <br>
-  <div class="row container" >
+  <div class="container-fluid" >
     <div class="col-12" >
       <h2 [ngStyle]="{'color': colorLetras}">Seleccione un color para las letras y el fondo </h2>
     </div>
   </div>
 
-  <div class="row container">
+  <div class="container-fluid">
     <div class="col-12">
 
       <input type="color" [value]="color" (change)="capturarColorLetras($event)">
